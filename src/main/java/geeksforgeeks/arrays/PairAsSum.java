@@ -12,7 +12,6 @@ public class PairAsSum {
         int K = 2;
 
         System.out.println(hasArrayTwoCandidates(A, A.length, K));
-
     }
 
     // Function to check if array has 2 elements

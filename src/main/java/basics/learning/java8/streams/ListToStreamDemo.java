@@ -77,6 +77,5 @@ public class ListToStreamDemo {
 
 
         System.out.println(models);
-
     }
 }
