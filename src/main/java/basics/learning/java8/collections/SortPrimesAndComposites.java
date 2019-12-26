@@ -7,10 +7,11 @@ import java.util.List;
 public class SortPrimesAndComposites {
 
     /**
+     * <p>
      * You are given an array of integers, you have to put them in an order such that
      * all the prime numbers are in ascending order and the composite ones are in descending order (in-place)
      * to their corresponding position in original array i.e. primes at prime's places and composite at composite's places.
-     * <p>
+     * </p>
      * Input: 5, 4, 3, 7, 8, 10
      * Output: 3, 10, 5, 7, 8, 4
      */
