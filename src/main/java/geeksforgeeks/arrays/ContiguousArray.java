@@ -2,8 +2,7 @@ package geeksforgeeks.arrays;
 
 public class ContiguousArray {
     //Given an unsorted array A of size N of non-negative integers,
-    // find a continuous sub-array which adds to a given number S.
-
+    // find Maximum Sum Subarray
     public static void main(String[] args) {
 
         int[] A = {4, -3, -2, 2, 3, 1, -2, -3, 4, 2, -6, -3, -1, 3, 1, 2, 11};
@@ -39,7 +38,6 @@ public class ContiguousArray {
         }
 
         System.out.println("start and end indexes are : " + start + " -> " + end);
-        System.out.println("sum : " + sum); // not correct : todo
     }
 
 }
