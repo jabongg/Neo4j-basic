@@ -28,7 +28,7 @@ public class RotateArrays {
      * @param rotationCount
      */
     public static void arrayRotateRight(int[] elements, int rotationCount) {
-        int temp = 0;
+        int temp;
         for (int j = rotationCount; j > 0; j--) {
             temp = elements[elements.length - 1];
             for (int i = elements.length - 1; i > 0; i--) {
@@ -52,7 +52,7 @@ public class RotateArrays {
      * @param rotationCount
      */
     public static void arrayRotateLeft(int[] elements, int rotationCount) {
-        int temp = 0;
+        int temp;
         for (int j = rotationCount; j > 0; j--) {
             temp = elements[0];
             for (int i = 0; i < elements.length - 1; i++) {
