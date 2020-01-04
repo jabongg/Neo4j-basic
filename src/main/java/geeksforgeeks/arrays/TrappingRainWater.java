@@ -9,7 +9,7 @@ public class TrappingRainWater {
         Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
 
-        for (int i = 0; i < T; i++) {
+        while (T-- > 0) {
             int N = scan.nextInt();
             int[] A = new int[N];
 
