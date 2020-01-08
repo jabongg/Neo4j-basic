@@ -68,6 +68,54 @@ public class SortPrimesAndComposites {
         return true;
     }
 
+
+    // optimised solution
+    public static void main2(String[] args) {
+        int[] integers = {29, 5, 4, 3, 7, 8, 10, 89, 17, 90};
+        boolean[] isPrime = new boolean[integers.length]; // storing if the numbers is prime or not
+
+        for (int elements : integers) {
+            System.out.print(elements + " ");
+        }
+
+        System.out.println();
+
+        List<Integer> prime = new ArrayList<>();
+
+        int primeIndexCount = 0;
+        int compositeIndexCount = 0;
+
+        int[] finalArray = new int[integers.length];
+        List<Integer> composite = new ArrayList<>();
+
+        for (int i = 0; i < integers.length; i++) {
+            boolean isPrimeNumber = isPrime(integers[i]);
+            isPrime[i] = isPrimeNumber; // storing prime state to the boolean array
+
+            if (isPrimeNumber) {
+                prime.add(integers[i]);
+            } else {
+                composite.add(integers[i]);
+            }
+        }
+
+        Collections.sort(prime);
+        Collections.sort(composite, Collections.reverseOrder());
+
+        for (int i = 0; i < integers.length; i++) {
+            if (isPrime[i]) {
+                finalArray[i] = prime.get(primeIndexCount++);
+            } else {
+                finalArray[i] = composite.get(compositeIndexCount++);
+            }
+        }
+
+        for (int elements : finalArray) {
+            System.out.print(elements + " ");
+        }
+    }
+
+
 }
 
 
