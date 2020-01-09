@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Difficulty Level: Rookie
  * Expected Time Complexity: O(n) [Only one traversal of array is allowed]
  */
-public class LargestPairSum {
+public class LargestPairSum implements Cloneable {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
